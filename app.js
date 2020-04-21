@@ -6,4 +6,6 @@ app.get('/', function(req, res){
    res.send("Hello world!");
 });
 
-app.listen(80);
+var port = normalizePort(process.env.PORT || '3000');
+
+app.listen(port);
